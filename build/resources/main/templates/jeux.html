@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+		<link rel="stylesheet" href="/css/style.css">
+
+	</head>
+
+	<body>
+	<div class="container-wrapper">
+		<div th:replace="~{fragments/myTemplate :: header}"/>
+
+		<main class="container">
+			<h1>Jeux</h1>
+
+			<div sec:authorize="hasRole('ROLE_ADMIN')">
+				<a href="/ajouterJeu" style="text-align: center">Ajouter un jeu</a>
+			</div>
+	
+			<h3>Liste des jeux :</h3>
+			
+			<table border="1" class="tableauClient">
+    			<thead>
+       	 			<tr>
+            			<th>ID</th>
+            			<th>Titre</th>
+            			<th>Référence</th>
+            			<th>Description</th>
+            			<th>Tarif /journée</th>
+            			<th>Age minimum</th>
+            			<th>Durée</th>
+            			<th>Genres</th>
+            			<th>Gérer</th>
+        			</tr>
+    			</thead>
+    			<tbody>
+        			<tr th:each="jeu : ${jeux}">
+           			 	<td th:text="${jeu.id_jeu}"></td>
+            			<td th:text="${jeu.titre}"></td>
+            			<td th:text="${jeu.reference}"></td>
+            			<td th:text="${jeu.description}"></td>
+            			<td th:text="${jeu.tarifJournee}"></td>
+            			<td th:text="${jeu.ageMin}"></td>
+        				<td th:text="${jeu.duree}"></td>
+        				<td >
+        				<span th:each="genre : ${jeu.genres}" th:text="${genre.libelle}"></span>
+        				</td>
+        				<td>
+        				<a th:href="@{/detailsJeu/{id_jeu}(id_jeu=${jeu.id_jeu})}"><button  style="display: inline-block">Détails</button></a>
+        				<form th:action="@{/jeux/supprimer}" method="post" style="display: inline;">
+							<input type="hidden" name="id_jeu" th:value="${jeu.id_jeu}" />
+							<div style="display: inline" sec:authorize="hasRole('ROLE_ADMIN')">
+							<button type="submit">Supprimer</button>
+							</div>
+						</form>
+        				</td>
+<!--  
+        				<td>
+        					<a th:href="@{/modifierClient/{id_client}(id_client=${client.id_client})}"><button>Modifier</button></a>
+        					
+        				</td>
+-->        				
+        			</tr>
+    			</tbody>
+			</table>
+			
+			
+		</main>
+	
+		<div th:replace="~{fragments/myTemplate :: footer}"/>
+	</div>
+	</body>
+
+</html>

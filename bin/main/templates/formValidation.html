@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Ludothèque</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+
+	<div th:replace="~{fragments/myTemplate::header}"/>
+
+<main>
+<h2>Le client a bien été ajouté !</h2>
+<div><a href="/home">Retour</a></div>
+<div><a href="/clients">Ajouter un nouveau client</a></div>
+</main>
+
+	<div th:replace="~{fragments/myTemplate::footer}"/>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+		<link rel="stylesheet" th:href="@{/css/style.css}"/>
+	</head>
+	
+	<body>
+	
+		<div th:replace="~{fragments/myTemplate :: header}"/>
+
+		<main>
+			<h1>Modifier le client:</h1>
+			<p th:text="${client.nom} + ' ' + ${client.prenom}"></p>
+			
+	
+	    	<!-- Message d'erreur -->
+    		<div th:if="${errorMessage != null}">
+        		<p class="error"  th:text="${errorMessage}"></p>
+    		</div>
+		
+			<div class="div-form">
+				<form action="/modifierClient/modifier" method="post" th:object="${client}">
+					<!-- <input type="hidden" th:field="*{id_client}" />  -->
+					<input type="hidden" th:field="*{id_client}"/>
+					<div>
+						<label>Nom : </label>
+						<input type="text" th:field="*{nom}" required/>
+						<p class="error" th:if="${#fields.hasErrors('nom')}" th:errors="*{nom}"></p>
+					</div>
+					<div>
+						<label>Prénom : </label>
+						<input type="text" th:field="*{prenom}" required/>
+						<p class="error" th:if="${#fields.hasErrors('prenom')}" th:errors="*{prenom}"></p>
+					</div>
+					<div>
+						<label>Email : </label>
+						<input type="email" th:field="*{email}" required/>
+						<p class="error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></p>
+					</div>
+					<div>
+						<label>N° Téléphone : </label>
+						<input type="text" th:field="*{telephone}"/>
+						<p class="error" th:if="${#fields.hasErrors('telephone')}" th:errors="*{telephone}"></p>
+					</div>
+					<div>
+						<label>Rue : </label>
+						<input type="text" th:field="*{rue}" required/>
+						<p class="error" th:if="${#fields.hasErrors('rue')}" th:errors="*{rue}"></p>
+					</div>
+					<div>
+						<label>Code Postal : </label>
+						<input type="text" th:field="*{codePostal}" required/>
+						<p class="error" th:if="${#fields.hasErrors('codePostal')}" th:errors="*{codePostal}"></p>
+					</div>
+					<div>
+						<label>Ville : </label>
+						<input type="text" th:field="*{ville}" required/>
+						<p class="error" th:if="${#fields.hasErrors('ville')}" th:errors="*{ville}"></p>
+					</div>
+					<button type="submit">Enregistrer les modifications</button>
+				</form>
+			</div>
+		</main>
+		
+		<div th:replace="~{fragments/myTemplate :: footer}"/>
+	</body>
+</html>

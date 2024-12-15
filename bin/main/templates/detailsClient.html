@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+		<link rel="stylesheet" th:href="@{/css/style.css}"/>
+	</head>
+
+	<body>
+		<div th:replace="~{fragments/myTemplate :: header}"/>
+
+		<main>
+			<h1>Client n°<span th:text="${client.id_client}"></span></h1>
+			
+			<h3 th:text="${client.nom} + ' ' + ${client.prenom}"></h3>
+			<p th:text="${client.email}"></p>
+			<p th:text="${client.telephone}"></p>
+			<p th:text="${client.rue} + ' ' + ${client.codePostal} + ' ' + ${client.ville}"></p>
+			
+		
+		</main>
+	
+		<div th:replace="~{fragments/myTemplate :: footer}"/>
+	</body>
+
+</html>

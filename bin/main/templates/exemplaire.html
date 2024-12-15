@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+		<link rel="stylesheet" th:href="@{/css/style.css}"/>
+	</head>
+
+	<body>
+		<div th:replace="~{fragments/myTemplate :: header}"/>
+
+		<main>
+			<h1>Jeu n°<span th:text="${jeu.id_jeu}"> : <span th:text="${jeu.titre}"></span></span></h1>
+			
+			
+				
+			
+		</main>
+	
+		<div th:replace="~{fragments/myTemplate :: footer}"/>
+	</body>
+
+</html>

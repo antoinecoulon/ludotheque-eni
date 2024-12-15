@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+	</head>
+	
+	<body>
+		<div class="header" th:fragment="header">
+			<header>
+				<nav>
+					<a href="/home">Accueil</a>
+					<a href="/clients">Clients</a>
+					<a href="/jeux">Jeux</a>
+				</nav>
+			</header>
+		</div>
+	
+		<div class="footer" th:fragment="footer">
+			<p>&copy; Antoine</p>
+		</div>
+	</body>
+	
+</html>

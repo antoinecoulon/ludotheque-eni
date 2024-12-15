@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+		<link rel="stylesheet" th:href="@{/css/style.css}"/>
+	</head>
+
+	<body>
+		<div th:replace="~{fragments/myTemplate::header}"/>
+		<main>
+			<h1>Bienvenue sur le site de la Ludothèque !</h1>
+			
+			<a href="/home">Accueil</a>
+			<a href="/clients">Clients</a>
+			<a href="/jeux">Jeux</a>
+			
+		</main>
+		
+		
+		<div th:replace="~{fragments/myTemplate::footer}"/>
+	</body>
+	
+</html>

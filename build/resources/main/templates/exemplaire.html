@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+		<link rel="stylesheet" href="/css/style.css">
+
+	</head>
+
+	<body>
+		<div th:replace="~{fragments/myTemplate :: header}"/>
+
+		<main class="container">
+			<h1>Jeu n°<span th:text="${jeu.id_jeu}"></span> : <span th:text="${jeu.titre}"></span></h1>
+			
+			<h2>Nombres d'exemplaires total : <span th:text="${nombre_exemplaires}"></span> </h2>
+			<h2>Nombres d'exemplaires <em>louables</em> (= en bon état/disponible ??) : <span th:text="${nombre_exemplaires_louables}"></span> </h2>
+				<!-- TODO: louable = dispo ou bien en état d'être loué ?????? -->
+
+
+			<div>
+				<ul th:each="exemplaire : ${exemplaires}" style="list-style: none">
+					<li th:text="'ID : ' + ${exemplaire.id_exemplaire}"></li>
+					<li th:text="'Code barre : ' + ${exemplaire.code_barre}"></li>
+					<li th:text="'Louable : ' + ${exemplaire.louable == true ? 'Oui' : 'Non'}"></li>
+					<li th:text="'-------------------------------------------------'"></li>
+				</ul>
+			</div>
+
+			<div sec:authorize="hasRole('ROLE_ADMIN')">
+				<h2>Ajouter un exemplaire : </h2>
+				<form method="post" th:action="@{/exemplaire/ajouterExemplaire/{id_jeu}(id_jeu=${exemplaire_jeu.id_jeu})}" th:object="${exemplaire_jeu}">
+					<input type="hidden" th:field="*{id_exemplaire}"/>
+					<label>Code barre (13 caractères) : </label>
+					<input type="text" th:field="*{code_barre}"/>
+					<label>Louable : </label>
+					<input type="checkbox" th:field="*{louable}">
+					<input type="hidden" name="id_jeu" th:value="${exemplaire_jeu.id_jeu}" />
+					<button type="submit">Ajouter cet exemplaire</button>
+				</form>
+			</div>
+		</main>
+	
+		<div th:replace="~{fragments/myTemplate :: footer}"/>
+
+	</body>
+
+</html>

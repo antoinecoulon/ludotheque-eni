@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+	
+	<body>
+		<div th:fragment="header">
+			<header>
+				<nav>
+					<div>
+						<a href="/home">Accueil</a>
+
+						<a sec:authorize="hasRole('ROLE_ADMIN')" href="/clients">Clients</a>
+
+						<a href="/jeux">Jeux</a>
+
+						<a sec:authorize="hasRole('ROLE_ADMIN')" href="/location">Location</a>
+
+						<a sec:authorize="hasRole('ROLE_ADMIN')" href="/logging">Logs(Admin)</a>
+
+						<div class="logout">
+							<form th:action="@{/logout}" method="post">
+								<span sec:authorize="hasRole('ROLE_ADMIN')"><em>[ADMIN]</em></span>
+								<span sec:authorize="hasRole('ROLE_USER')">[USER]</span>
+
+								<div style="display: inline-block" sec:authorize="isAuthenticated()">
+									<input type="submit" value="Déconnexion"/>
+								</div>
+							</form>
+						</div>
+					</div>
+				</nav>
+			</header>
+		</div>
+	
+		<div class="footer" th:fragment="footer">
+			<p>&copy; Antoine</p>
+		</div>
+
+	</body>
+	
+</html>
