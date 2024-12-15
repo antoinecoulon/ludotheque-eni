@@ -1,0 +1,153 @@
+2024-12-12T09:58:24.133+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Starting LudothequeApplication using Java 17.0.12 with PID 9744 (E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque\build\classes\java\main started by acoulon2024 in E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque)
+2024-12-12T09:58:24.135+01:00 DEBUG 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-12T09:58:24.136+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-12T09:58:24.181+01:00  INFO 9744 --- [Ludotheque] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-12T09:58:24.184+01:00  INFO 9744 --- [Ludotheque] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-12T09:58:25.242+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-12T09:58:25.253+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-12T09:58:25.254+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-12T09:58:25.295+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-12T09:58:25.295+01:00  INFO 9744 --- [Ludotheque] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1111 ms
+2024-12-12T09:58:25.527+01:00  INFO 9744 --- [Ludotheque] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-12T09:58:25.934+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-12T09:58:25.960+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-12T09:58:25.969+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Started LudothequeApplication in 2.258 seconds (process running for 2.873)
+2024-12-12T10:01:21.180+01:00  INFO 9744 --- [Ludotheque] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-12T10:01:21.184+01:00  INFO 9744 --- [Ludotheque] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-12T10:01:21.258+01:00  INFO 9744 --- [Ludotheque] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-12T10:01:21.358+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Starting LudothequeApplication using Java 17.0.12 with PID 9744 (E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque\build\classes\java\main started by acoulon2024 in E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque)
+2024-12-12T10:01:21.358+01:00 DEBUG 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-12T10:01:21.358+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-12T10:01:21.647+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-12T10:01:21.648+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-12T10:01:21.648+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-12T10:01:21.667+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-12T10:01:21.667+01:00  INFO 9744 --- [Ludotheque] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 306 ms
+2024-12-12T10:01:21.737+01:00  INFO 9744 --- [Ludotheque] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-12T10:01:21.845+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-12T10:01:21.857+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-12T10:01:21.861+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Started LudothequeApplication in 0.546 seconds (process running for 178.759)
+2024-12-12T10:01:21.863+01:00  INFO 9744 --- [Ludotheque] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-12T10:01:53.064+01:00  INFO 9744 --- [Ludotheque] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-12T10:01:53.067+01:00  INFO 9744 --- [Ludotheque] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-12T10:01:53.270+01:00  INFO 9744 --- [Ludotheque] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-12T10:01:53.339+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Starting LudothequeApplication using Java 17.0.12 with PID 9744 (E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque\build\classes\java\main started by acoulon2024 in E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque)
+2024-12-12T10:01:53.340+01:00 DEBUG 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-12T10:01:53.340+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-12T10:01:53.557+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-12T10:01:53.558+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-12T10:01:53.558+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-12T10:01:53.570+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-12T10:01:53.570+01:00  INFO 9744 --- [Ludotheque] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 229 ms
+2024-12-12T10:01:53.629+01:00  INFO 9744 --- [Ludotheque] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-12T10:01:53.714+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-12T10:01:53.722+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-12T10:01:53.726+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Started LudothequeApplication in 0.409 seconds (process running for 210.623)
+2024-12-12T10:01:53.727+01:00  INFO 9744 --- [Ludotheque] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-12T10:02:05.267+01:00  INFO 9744 --- [Ludotheque] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-12T10:02:05.269+01:00  INFO 9744 --- [Ludotheque] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-12T10:02:05.370+01:00  INFO 9744 --- [Ludotheque] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-12T10:02:05.431+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Starting LudothequeApplication using Java 17.0.12 with PID 9744 (E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque\build\classes\java\main started by acoulon2024 in E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque)
+2024-12-12T10:02:05.431+01:00 DEBUG 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-12T10:02:05.431+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-12T10:02:05.633+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-12T10:02:05.634+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-12T10:02:05.634+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-12T10:02:05.646+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-12T10:02:05.646+01:00  INFO 9744 --- [Ludotheque] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 214 ms
+2024-12-12T10:02:05.704+01:00  INFO 9744 --- [Ludotheque] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-12T10:02:05.793+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-12T10:02:05.801+01:00  INFO 9744 --- [Ludotheque] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-12T10:02:05.805+01:00  INFO 9744 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Started LudothequeApplication in 0.397 seconds (process running for 222.703)
+2024-12-12T10:02:05.806+01:00  INFO 9744 --- [Ludotheque] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-12T10:04:28.862+01:00  INFO 9744 --- [Ludotheque] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-12T10:04:28.931+01:00  INFO 9744 --- [Ludotheque] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-12T10:04:33.004+01:00  INFO 13036 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Starting LudothequeApplication using Java 17.0.12 with PID 13036 (E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque\build\classes\java\main started by acoulon2024 in E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque)
+2024-12-12T10:04:33.006+01:00 DEBUG 13036 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-12T10:04:33.007+01:00  INFO 13036 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-12T10:04:33.102+01:00  INFO 13036 --- [Ludotheque] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-12T10:04:33.102+01:00  INFO 13036 --- [Ludotheque] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-12T10:04:34.230+01:00  INFO 13036 --- [Ludotheque] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-12T10:04:34.240+01:00  INFO 13036 --- [Ludotheque] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-12T10:04:34.241+01:00  INFO 13036 --- [Ludotheque] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-12T10:04:34.281+01:00  INFO 13036 --- [Ludotheque] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-12T10:04:34.281+01:00  INFO 13036 --- [Ludotheque] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1178 ms
+2024-12-12T10:04:34.523+01:00  INFO 13036 --- [Ludotheque] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-12T10:04:34.982+01:00  INFO 13036 --- [Ludotheque] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-12T10:04:35.026+01:00  INFO 13036 --- [Ludotheque] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-12T10:04:35.037+01:00  INFO 13036 --- [Ludotheque] [restartedMain] f.eni.ludotheque.LudothequeApplication   : Started LudothequeApplication in 2.848 seconds (process running for 4.462)
+2024-12-12T10:04:39.153+01:00  INFO 13036 --- [Ludotheque] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-12T10:04:39.153+01:00  INFO 13036 --- [Ludotheque] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-12T10:04:39.154+01:00  INFO 13036 --- [Ludotheque] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-12T10:04:39.195+01:00  INFO 13036 --- [Ludotheque] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-12T10:04:39.333+01:00  INFO 13036 --- [Ludotheque] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1525475c
+2024-12-12T10:04:39.335+01:00  INFO 13036 --- [Ludotheque] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-12T10:05:04.308+01:00  INFO 13036 --- [Ludotheque] [http-nio-8080-exec-5] f.e.ludotheque.dal.ClientRepositoryImpl  : Création du client : Client [id_client=0, nom=COULON, prenom=Antoine, email=antoine@coulon.com, telephone=0102085555, rue=Impasse des resedas, codePostal=44190, ville=CLISSON]
+2024-12-12T10:05:04.335+01:00 DEBUG 13036 --- [Ludotheque] [http-nio-8080-exec-5] f.e.ludotheque.dal.ClientRepositoryImpl  : Client Client [id_client=0, nom=COULON, prenom=Antoine, email=antoine@coulon.com, telephone=0102085555, rue=Impasse des resedas, codePostal=44190, ville=CLISSON] créé avec succès
+2024-12-12T10:06:38.827+01:00  INFO 13036 --- [Ludotheque] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 20 class path changes (1 addition, 0 deletions, 19 modifications)
+2024-12-12T10:06:38.840+01:00  INFO 13036 --- [Ludotheque] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-12T10:06:38.919+01:00  INFO 13036 --- [Ludotheque] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-12T10:06:38.924+01:00  INFO 13036 --- [Ludotheque] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-12T10:06:38.928+01:00  INFO 13036 --- [Ludotheque] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-12 10:07:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-12 10:07:14 [restartedMain] INFO  f.e.ludotheque.LudothequeApplication - Starting LudothequeApplication using Java 17.0.12 with PID 7060 (E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque\build\classes\java\main started by acoulon2024 in E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque)
+2024-12-12 10:07:14 [restartedMain] DEBUG f.e.ludotheque.LudothequeApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-12 10:07:14 [restartedMain] INFO  f.e.ludotheque.LudothequeApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-12 10:07:14 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-12 10:07:14 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-12 10:07:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-12 10:07:15 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-12 10:07:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-12 10:07:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-12 10:07:15 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-12 10:07:15 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1083 ms
+2024-12-12 10:07:15 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-12 10:07:16 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-12 10:07:16 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-12 10:07:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-12 10:07:16 [restartedMain] INFO  f.e.ludotheque.LudothequeApplication - Started LudothequeApplication in 2.292 seconds (process running for 2.892)
+2024-12-12 10:13:53 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2024-12-12 10:13:53 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-12 10:13:53 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-12 10:13:54 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-12 10:13:54 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-12 10:13:54 [restartedMain] INFO  f.e.ludotheque.LudothequeApplication - Starting LudothequeApplication using Java 17.0.12 with PID 7060 (E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque\build\classes\java\main started by acoulon2024 in E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque)
+2024-12-12 10:13:54 [restartedMain] DEBUG f.e.ludotheque.LudothequeApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-12 10:13:54 [restartedMain] INFO  f.e.ludotheque.LudothequeApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-12 10:13:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-12 10:13:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-12 10:13:54 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-12 10:13:54 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-12 10:13:54 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-12 10:13:54 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 272 ms
+2024-12-12 10:13:54 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-12 10:13:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-12 10:13:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-12 10:13:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-12 10:13:54 [restartedMain] INFO  f.e.ludotheque.LudothequeApplication - Started LudothequeApplication in 0.525 seconds (process running for 401.015)
+2024-12-12 10:13:54 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-12 10:18:57 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 22 class path changes (0 additions, 0 deletions, 22 modifications)
+2024-12-12 10:18:57 [Thread-7] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-12 10:18:57 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2024-12-12 10:18:57 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-12 10:18:57 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2024-12-12 10:18:57 [restartedMain] INFO  f.e.ludotheque.LudothequeApplication - Starting LudothequeApplication using Java 17.0.12 with PID 7060 (E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque\build\classes\java\main started by acoulon2024 in E:\Sem5- Spring Boot\wspSpringBoot\Ludotheque)
+2024-12-12 10:18:57 [restartedMain] DEBUG f.e.ludotheque.LudothequeApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-12 10:18:57 [restartedMain] INFO  f.e.ludotheque.LudothequeApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-12 10:18:58 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-12 10:18:58 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-12 10:18:58 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-12 10:18:58 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-12 10:18:58 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-12 10:18:58 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 246 ms
+2024-12-12 10:18:58 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-12 10:18:58 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-12 10:18:58 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-12 10:18:58 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-12 10:18:58 [restartedMain] INFO  f.e.ludotheque.LudothequeApplication - Started LudothequeApplication in 0.461 seconds (process running for 704.745)
+2024-12-12 10:18:58 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-12-12 10:18:58 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-12 10:18:58 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-12 10:18:58 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-12 10:33:55 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-12 10:33:55 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

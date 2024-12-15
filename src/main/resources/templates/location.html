@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ludothèque</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+   <div class="container-wrapper">
+    <div th:replace="~{fragments/myTemplate :: header}"/>
+
+    <main class="container">
+        <h1>Location</h1>
+    <div class="affichage-tous">
+        <div th:each="location : ${locations}" class="affichage-solo">
+            <ul >
+                <li th:text="'N° : ' + ${location.id_location}"></li>
+                <li th:text="'Date de début de location : ' + ${location.date_debut_location}"></li>
+                <li th:text="'Payé : ' + ${location.paye}"></li>
+                <li th:text="'Prix total : ' + ${location.prix_total}"></li>
+                <li th:text="'Client : ' + ${location.client.nom} + ${location.client.prenom}"></li>
+            </ul>
+        </div>
+    </div>
+
+    </main>
+
+    <div th:replace="~{fragments/myTemplate :: footer}"/>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+		<link rel="stylesheet" href="/css/style.css">
+
+	</head>
+
+	<body>
+	<div class="container-wrapper">
+	<div th:replace="~{fragments/myTemplate :: header}"/>
+
+		<main class="container">
+			<h1>Jeu n°<span th:text="${jeu.id_jeu}"></span></h1>
+			
+			<h3 th:text="${jeu.titre}"></h3>
+			<p> Référence : <span th:text="${jeu.reference}"></span></p>
+			<p> Description : <span th:text="${jeu.description}"></span></p>
+			<p> Tarif /jour : <span th:text="${jeu.tarifJournee}"></span></p>
+			<p> Age minimum : <span th:text="${jeu.ageMin}"></span></p>
+			<p> Durée : <span th:text="${jeu.duree}"></span></p>
+			<p> Genre : <span th:each="genre : ${jeu.genres}" th:text="${genre.libelle}"></span></p>
+		
+			<a th:href="@{/exemplaire/{id_jeu}(id_jeu=${jeu.id_jeu})}"><button> Voir les exemplaires </button></a>
+		
+		</main>
+	
+		<div th:replace="~{fragments/myTemplate :: footer}"/>
+	</div>
+	</body>
+
+</html>

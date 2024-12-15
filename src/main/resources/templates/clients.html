@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+
+	<body>
+	<div class="container-wrapper">
+	<div th:replace="~{fragments/myTemplate :: header}"/>
+		<main class="container">
+			<h1>Clients</h1>
+	
+			<a href="/ajouterClient">Ajouter un client</a>
+	
+			<h3>Liste des clients :</h3>
+			
+			<table>
+    			<thead>
+       	 			<tr>
+            			<th>ID</th>
+            			<th>Nom</th>
+            			<th>Prénom</th>
+            			<th>E-mail</th>
+            			<th>Téléphone</th>
+            			<th>Adresse</th>
+            			<th>Gérer</th>
+        			</tr>
+    			</thead>
+    			<tbody>
+        			<tr th:each="client : ${clients}">
+           			 	<td th:text="${client.id_client}"></td>
+            			<td th:text="${client.nom}"></td>
+            			<td th:text="${client.prenom}"></td>
+            			<td th:text="${client.email}"></td>
+            			<td th:text="${client.telephone}"></td>
+            			<td th:text="${client.rue} + ' ' + ${client.codePostal} + ' ' + ${client.ville}"></td>
+        				<td>
+        					<a th:href="@{/detailsClient/{id_client}(id_client=${client.id_client})}"><button>Détails</button></a>
+        					<a th:href="@{/modifierClient/{id_client}(id_client=${client.id_client})}"><button>Modifier</button></a>
+        					<form th:action="@{/clients/supprimer}" method="post" style="display: inline;">
+    							<input type="hidden" name="id_client" th:value="${client.id_client}" />
+    							<button type="submit">Supprimer</button>
+							</form>
+        				</td>
+        			</tr>
+    			</tbody>
+			</table>
+			
+			
+		</main>
+		<div th:replace="~{fragments/myTemplate :: footer}"/>
+	</div>
+	</body>
+
+</html>

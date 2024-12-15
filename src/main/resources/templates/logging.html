@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Ludothèque</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<div class="container-wrapper">
+  <div th:replace="~{fragments/myTemplate::header}"/>
+
+  <main class="container">
+    <h1>Logs</h1>
+
+    <h3>!! Les logs sont sauvegardés dans le fichier logs/ludotheque.log !!</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Log Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="log, iterStat : ${logs}">
+          <td th:text="${iterStat.index + 1}"></td>
+          <td th:text="${log}"></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+
+  <div th:replace="~{fragments/myTemplate::footer}"/>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ludothèque</title>
+		<link rel="stylesheet" href="/css/style.css">
+
+	</head>
+	
+	<body>
+	<div class="container-wrapper">
+		<div th:replace="~{fragments/myTemplate :: header}"/>
+
+		<main class="container">
+			<h1>Ajouter un nouveau jeu</h1>
+	
+	    	<!-- Message d'erreur -->
+    		<div th:if="${errorMessages}">
+        		<p class="error"  th:text="${errorMessages}"></p>
+    		</div>
+		
+			<div class="div-form">
+				<form action="/ajouterJeu" method="post" th:object="${jeu}">
+					<div>
+						<label>Titre : *</label>
+						<input type="text" th:field="*{titre}" required/>
+						<p class="error" th:if="${#fields.hasErrors('titre')}" th:errors="*{titre}"></p>
+					</div>
+					<div>
+						<label>Référence (13 chiffres) : *</label>
+						<input type="text" th:field="*{reference}" required/>
+						<p class="error" th:if="${#fields.hasErrors('reference')}" th:errors="*{reference}"></p>
+					</div>
+					<div>
+						<label>Description : *</label>
+						<input type="text" th:field="*{description}"  required/>
+						<p class="error" th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></p>
+					</div>
+					<div>
+						<label>Tarif (/journée) : *</label>
+						<input type="text" th:field="*{tarifJournee}" required/>
+						<p class="error" th:if="${#fields.hasErrors('tarifJournee')}" th:errors="*{tarifJournee}"></p>
+					</div>
+					<div>
+						<label>Age minimum : *</label>
+						<input type="number" th:field="*{ageMin}" min="1" max="99" required/>
+						<p class="error" th:if="${#fields.hasErrors('ageMin')}" th:errors="*{ageMin}"></p>
+					</div>
+					<div>
+						<label>Durée : *</label>
+						<input type="text" th:field="*{duree}"  required/>
+						<p class="error" th:if="${#fields.hasErrors('duree')}" th:errors="*{duree}"></p>
+					</div>
+					<div>
+						<label for="genres">Genres *:</label> 
+						<select th:field="*{genres}" multiple size="5">
+							<option th:each="genre: ${@genreService.all}"
+								th:text="${genre.libelle}" th:value="${genre.id_genre}"></option>
+						</select>
+						<div style="color: red;" th:if="${#fields.hasErrors('genres')}">
+							<ul>
+								<li th:each="erreur: ${#fields.errors('genres')}"
+								th:text="${erreur}"></li>
+							</ul>
+						</div>
+					</div>
+					<button type="submit">Envoyer</button>
+				</form>
+				<p>* = champs obligatoires</p>
+			</div>
+		</main>
+		
+		<div th:replace="~{fragments/myTemplate :: footer}"/>
+	</div>
+	</body>
+</html>
